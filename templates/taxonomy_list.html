@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h1 class="title">
+  tags
+</h1>
+
+{% for term in terms %}
+<div>
+    <div><b>{{term.name}}</b></div>
+    <div>
+        {% for page in term.pages %}
+            <div>{{page.title}}</div>
+        {% endfor %}
+    </div>
+</div>
+{% endfor %}
+
+{% endblock content %}

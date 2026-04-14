@@ -1,0 +1,63 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="LRTuevBNvWeU44lsFYQL">
+    <mxGraphModel dx="929" dy="608" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-40" parent="1" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.direct_data;whiteSpace=wrap;" value="Kafka" vertex="1">
+          <mxGeometry height="40" width="80" x="40" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-41" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;strokeWidth=2;" value="Spark" vertex="1">
+          <mxGeometry height="40" width="80" x="200" y="240" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-42" edge="1" parent="1" source="enPgUH3tahSNn4Nc5Iv6-40" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="enPgUH3tahSNn4Nc5Iv6-41">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="160" y="260" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-45" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;strokeWidth=2;" value="Data Lakehouse in S3" vertex="1">
+          <mxGeometry height="80" width="80" x="359" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-46" edge="1" parent="1" source="enPgUH3tahSNn4Nc5Iv6-41" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" target="enPgUH3tahSNn4Nc5Iv6-45">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-50" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="1. Read&lt;br&gt;source data" vertex="1">
+          <mxGeometry height="30" width="90" x="110" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-62" edge="1" parent="1" source="enPgUH3tahSNn4Nc5Iv6-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="enPgUH3tahSNn4Nc5Iv6-68">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-63" parent="1" style="html=1;shadow=0;dashed=0;align=center;verticalAlign=middle;shape=mxgraph.arrows2.arrow;dy=0;dx=10;notch=0;strokeWidth=2;" value="Spark or Athena" vertex="1">
+          <mxGeometry height="40" width="100" x="349" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-64" edge="1" parent="1" source="enPgUH3tahSNn4Nc5Iv6-66" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" target="enPgUH3tahSNn4Nc5Iv6-63">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-66" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;strokeWidth=2;" value="data analysts&lt;br&gt;or&lt;br&gt;scheduler" vertex="1">
+          <mxGeometry height="60" width="30" x="220" y="110" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-67" edge="1" parent="1" style="shape=flexArrow;endArrow=classic;html=1;rounded=0;strokeWidth=2;" value="">
+          <mxGeometry height="50" relative="1" width="50" as="geometry">
+            <mxPoint x="399.28999999999996" y="210" as="sourcePoint" />
+            <mxPoint x="399" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-68" parent="1" style="shape=card;whiteSpace=wrap;html=1;strokeWidth=2;size=20;" value="report" vertex="1">
+          <mxGeometry height="80" width="60" x="519" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-69" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="2. Fill tables (parquet files)" vertex="1">
+          <mxGeometry height="30" width="90" x="269" y="270" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-70" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="3. Run analytical query" vertex="1">
+          <mxGeometry height="30" width="91" x="250" y="100" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-71" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="4. Read data for report" vertex="1">
+          <mxGeometry height="30" width="91" x="420" y="170" as="geometry" />
+        </mxCell>
+        <mxCell id="enPgUH3tahSNn4Nc5Iv6-72" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="5. Produce report" vertex="1">
+          <mxGeometry height="30" width="91" x="439" y="100" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

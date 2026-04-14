@@ -1,0 +1,102 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Page-1" id="E4acLOEB9Cxug7iV9OhK">
+    <mxGraphModel dx="1115" dy="730" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=default;glass=0;shadow=0;verticalAlign=top;fontFamily=Courier New;fontStyle=1;arcSize=7;" value="TableProvider" vertex="1">
+          <mxGeometry height="130" width="320" x="40" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;strokeWidth=2;align=left;spacingLeft=5;" value="&lt;div&gt;fn scan(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;amp;self,&lt;/div&gt;&lt;div&gt;&amp;nbsp; projection,&lt;/div&gt;&lt;div&gt;&amp;nbsp; filters,&lt;/div&gt;&lt;div&gt;&amp;nbsp; limit&lt;/div&gt;&lt;div&gt;) -&amp;gt; dyn &lt;b&gt;ExecutionPlan&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="90" width="300" x="50" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--12" edge="1" parent="1" source="XSqaJZ7MmroMnmqfRbf--3" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeWidth=2;" target="XSqaJZ7MmroMnmqfRbf--1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;strokeWidth=2;" value="IndexedTableProvider" vertex="1">
+          <mxGeometry height="280" width="320" x="40" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--5" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;strokeWidth=2;align=left;spacingLeft=5;verticalAlign=top;" value="&lt;div&gt;fn scan(&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;amp;self,&lt;/div&gt;&lt;div&gt;&amp;nbsp; projection,&lt;/div&gt;&lt;div&gt;&amp;nbsp; filters,&lt;/div&gt;&lt;div&gt;&amp;nbsp; limit&lt;/div&gt;&lt;div&gt;) -&amp;gt; dyn &lt;b&gt;ExecutionPlan&lt;/b&gt; {&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; let files =&amp;nbsp;…;&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; let fsc =&amp;nbsp;&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;/span&gt;FileScanConfig::from(&lt;span style=&quot;white-space: pre;&quot;&gt;&lt;/span&gt;files);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; let dse = DataSourceExec::from(fsc);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; return&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="240" width="300" x="50" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--20" edge="1" parent="1" source="XSqaJZ7MmroMnmqfRbf--6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;curved=1;dashed=1;" target="XSqaJZ7MmroMnmqfRbf--11">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="370" y="630" />
+              <mxPoint x="370" y="595" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--6" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;" value="dse" vertex="1">
+          <mxGeometry height="20" width="40" x="130" y="620" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=default;glass=0;shadow=0;verticalAlign=top;fontFamily=Courier New;fontStyle=1;arcSize=7;" value="ExecutionPlan" vertex="1">
+          <mxGeometry height="80" width="280" x="400" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--8" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="interface that describes a table" vertex="1">
+          <mxGeometry height="20" width="180" x="100" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--9" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="interface that defines Physical Plan node" vertex="1">
+          <mxGeometry height="20" width="230" x="410" y="210" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Courier New;align=left;spacingLeft=5;" value="&lt;div&gt;fn execute(&amp;amp;self) -&amp;gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; dyn &lt;b&gt;RecordBatchStream&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="40" width="260" x="410" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--14" edge="1" parent="1" source="XSqaJZ7MmroMnmqfRbf--11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeWidth=2;" target="XSqaJZ7MmroMnmqfRbf--7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--11" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;strokeWidth=2;" value="DataSourceExec" vertex="1">
+          <mxGeometry height="260" width="280" x="400" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--15" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Courier New;strokeWidth=2;" value="data_source: FileScanConfig" vertex="1">
+          <mxGeometry height="20" width="220" x="410" y="430" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--19" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Courier New;align=left;spacingLeft=5;verticalAlign=top;" value="&lt;div&gt;fn execute(&amp;amp;self) -&amp;gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; dyn &lt;b&gt;RecordBatchStream&lt;/b&gt; {&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; let stream: &lt;b&gt;FileStream&lt;/b&gt; =&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; data_source.open(…);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; let batch_stream =&lt;/div&gt;&lt;div&gt;&amp;nbsp; &amp;nbsp; &lt;b&gt;BatchSplitStream&lt;/b&gt;::new(stream);&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;&lt;div&gt;&amp;nbsp; return&lt;/div&gt;&lt;div&gt;}&lt;/div&gt;" vertex="1">
+          <mxGeometry height="180" width="260" x="410" y="460" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--21" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="should be our implementation" vertex="1">
+          <mxGeometry height="20" width="180" x="200" y="380" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--38" edge="1" parent="1" source="XSqaJZ7MmroMnmqfRbf--22" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=0;entryY=0.75;entryDx=0;entryDy=0;dashed=1;" target="XSqaJZ7MmroMnmqfRbf--26">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--22" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fontFamily=Courier New;" value="batch_stream" vertex="1">
+          <mxGeometry height="20" width="100" x="480" y="593" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--23" parent="1" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillColor=default;glass=0;shadow=0;verticalAlign=top;fontFamily=Courier New;fontStyle=1;arcSize=7;" value="&lt;b&gt;RecordBatchStream: Stream&amp;lt;RecordBatch&amp;gt;&lt;/b&gt;" vertex="1">
+          <mxGeometry height="140" width="280" x="720" y="230" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--24" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Courier New;align=left;spacingLeft=5;" value="&lt;div&gt;fn schema(&amp;amp;self) -&amp;gt; Schema&lt;/div&gt;" vertex="1">
+          <mxGeometry height="20" width="260" x="730" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--25" parent="1" style="rounded=0;whiteSpace=wrap;html=1;strokeWidth=2;fontFamily=Courier New;align=left;spacingLeft=5;" value="fn poll_next(&lt;br&gt;&lt;div&gt;&amp;nbsp; self: Pin&amp;lt;&amp;amp;mut Self&amp;gt;,&lt;/div&gt;&lt;div&gt;&amp;nbsp; cx: &amp;amp;mut&amp;nbsp; Context&amp;lt;&#39;_&amp;gt;&lt;/div&gt;&lt;div&gt;) -&amp;gt; Poll&amp;lt;Option&amp;lt;Self::Item&amp;gt;&amp;gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="70" width="260" x="730" y="290" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--37" edge="1" parent="1" source="XSqaJZ7MmroMnmqfRbf--26" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.75;exitY=0;exitDx=0;exitDy=0;entryX=0.75;entryY=1;entryDx=0;entryDy=0;endArrow=block;endFill=0;strokeWidth=2;" target="XSqaJZ7MmroMnmqfRbf--23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--26" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;strokeWidth=2;" value="BatchSplitStream" vertex="1">
+          <mxGeometry height="80" width="200" x="800" y="560" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--34" edge="1" parent="1" source="XSqaJZ7MmroMnmqfRbf--29" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.25;exitY=0;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;strokeWidth=2;endArrow=block;endFill=0;" target="XSqaJZ7MmroMnmqfRbf--23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--29" parent="1" style="rounded=0;whiteSpace=wrap;html=1;verticalAlign=top;fontStyle=1;strokeWidth=2;" value="FileStream" vertex="1">
+          <mxGeometry height="80" width="230" x="700" y="440" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--33" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Courier New;align=left;spacingLeft=5;strokeWidth=2;" value="file_iter:&lt;br&gt;&amp;nbsp; VecDeque&amp;lt;PartitionedFile&amp;gt;" vertex="1">
+          <mxGeometry height="37" width="210" x="710" y="473" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--39" edge="1" parent="1" source="XSqaJZ7MmroMnmqfRbf--35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.25;exitDx=0;exitDy=0;entryX=0.25;entryY=1;entryDx=0;entryDy=0;dashed=1;strokeWidth=2;" target="XSqaJZ7MmroMnmqfRbf--29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--35" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fontFamily=Courier New;align=left;spacingLeft=5;strokeWidth=2;" value="input:&lt;br&gt;&amp;nbsp; dyn RecordBatchStream" vertex="1">
+          <mxGeometry height="40" width="180" x="810" y="590" as="geometry" />
+        </mxCell>
+        <mxCell id="XSqaJZ7MmroMnmqfRbf--40" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;rounded=0;" value="interface for functionality that performs actual reading of data" vertex="1">
+          <mxGeometry height="40" width="280" x="720" y="190" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

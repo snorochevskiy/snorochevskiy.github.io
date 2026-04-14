@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Stas's blog</title>
+  <!--script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script-->
+  <link rel="stylesheet" href="/my_style.css">
+  <style>
+    h1 {
+        font-size: 2.25rem;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 1.5em;
+        font-weight: 700;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+
+    <header class="my_header_container" >
+      <div style="font: bold 1rem sans-serif;">Stas Norochevskyi's blog</div>
+      <div class="my_header_menu">
+        <nav >
+          <div><a href="/blog">Blog</a></div>
+        </nav>
+      </div>
+    </header>
+
+    <section class="main_section">
+      <div class="my_page_container">
+        {% block content %} {% endblock content %}
+      </div>
+    </section>
+
+    <footer>
+      <div>Powered by <a href="https://www.getzola.org/">Zola</a></div>
+    </footer>
+  </div>
+</body>
+
+</html>
